@@ -53,6 +53,7 @@ table {
     box-sizing: border-box;
     max-width: 100%;
     border:1px solid grey;
+    color: grey;
 }
 
 
@@ -64,7 +65,7 @@ html{
 body{
     font-size: 1.6rem;
     line-height: 1.5;  
-    background-color: #fbfffb;
+    background-color: white;
 }
 
 h1{
@@ -82,30 +83,34 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 3%;
+    
 }
-
+.h2name {
+    background-color: #133c55;
+}
 
 .fourbuttons{
     display: flex;
-    width: 20%;
+    width: 30%;
     text-align: center;
 }
 
 .fourbuttons a{
-    background-color: aqua;
+    background-color: #133c55;(158, 158, 158);
     margin: auto;
-    width: 25%;
+    width: 30%;
     height: 50%;
     text-align: center;
+    color:white;
+    text-decoration:none;
 }
 /* header ends here */
 /* big square starts here */
 .bigimage{
     text-align: center;
     background-image: url(../images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
-    max-width: 100%;
-    margin: 10% 10%;
+    background-size:cover;
+    margin: 1% 10%;
 }
 .bigimagepadding{
     display: flex;
@@ -122,13 +127,35 @@ nav{
 /* big square ends here */
 
 /* six square starts here */
-.sixsquare{
+
+.threesquare {
     display: flex;
-    flex-flow: row wrap;
-    width: 100%;
+    justify-content: space-evenly;
+    height:100px;
 }
-.sixsquare div{
-    width: 33.33%;
+
+.threesquaresub {
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 0;
+}
+
+.square1, .square2, .square3{
+    width: 33%;
+    
+    
+}
+.square1{
+    background-image: url(../images/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
+    background-size:cover;
+}
+.square2{
+    background-image: url(../images/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg);
+    background-size:cover;
+}
+.square3{
+    background-image: url(../images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg);
+    background-size:cover;
 }
 /* six square ends here */
 
@@ -136,20 +163,15 @@ nav{
 /* footer starts here */
 footer{
     width: 100%;
-    height: 100%;
+    
+    background-color: #e0e1dd;
 }
 
-.footerr{
-    display:flex;
-    justify-content: space-evenly;
-    margin: 10% 10%;
-
-    
-    
-}
 
 .footersquare{
     display:flex;
     justify-content: space-evenly;
     position: center;
+    
 }
+
