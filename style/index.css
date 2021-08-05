@@ -50,10 +50,10 @@ table {
 
 /* border for easier styling */
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     max-width: 100%;
-    border:1px solid grey;
-    color: grey;
+    /* border:1px solid grey; */
+    color: grey; */
 }
 
 
@@ -61,11 +61,13 @@ table {
 /* General Styles */
 html{
     font-size:62.5%;
+    text-decoration:none;
 }
 body{
     font-size: 1.6rem;
     line-height: 1.5;  
     background-color: white;
+    text-decoration:none;
 }
 
 h1{
@@ -76,6 +78,9 @@ h2{
     font-size: 5rem;
 }
 
+a, u {
+    text-decoration: none;
+}
 /* general styles end here */
 
 /* header */
@@ -83,11 +88,10 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    text-decoration:none;
     
 }
-.h2name {
-    background-color: #133c55;
-}
+
 
 .fourbuttons{
     display: flex;
@@ -96,13 +100,15 @@ nav{
 }
 
 .fourbuttons a{
-    background-color: #133c55;(158, 158, 158);
+    
     margin: auto;
     width: 30%;
     height: 50%;
     text-align: center;
-    color:white;
-    text-decoration:none;
+    border: 1px solid black;
+}
+.homebutton{
+    background-color: black;
 }
 /* header ends here */
 /* big square starts here */
@@ -131,7 +137,7 @@ nav{
 .threesquare {
     display: flex;
     justify-content: space-evenly;
-    height:100px;
+    height:50vh;
 }
 
 .threesquaresub {
@@ -140,38 +146,52 @@ nav{
     margin: 1% 0;
 }
 
-.square1, .square2, .square3{
-    width: 33%;
-    
-    
+.square1, .square2, .square3,.square4, .square5, .square6{
+    width: 33%;    
 }
+
+
 .square1{
     background-image: url(../images/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
     background-size:cover;
+    
 }
 .square2{
     background-image: url(../images/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg);
-    background-size:cover;
+    background-size:contain;
 }
 .square3{
     background-image: url(../images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg);
     background-size:cover;
+    
+}
+.square4{
+    background-image: url(../images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg);
+    background-size:cover;
+}
+.square5{
+    background-image: url(../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
+    background-size:cover;
+    
+}
+.square6{
+    background-image: url(../images/alexandru-acea-XEB8y0nRRP4-unsplash.jpg);
+    background-size:cover;
+    
 }
 /* six square ends here */
 
 
 /* footer starts here */
 footer{
-    width: 100%;
-    
+    width: auto;
+    height: auto;
+    display:flex;
+    justify-content: space-evenly;
+    position: center;
     background-color: #e0e1dd;
 }
 
 
-.footersquare{
-    display:flex;
-    justify-content: space-evenly;
-    position: center;
-    
-}
+
 
