@@ -191,12 +191,16 @@ footer{
     position: center;
     background-color: #e0e1dd;
 }
-
 /* footer ends her */
 
 
 /* mediaquery 800px */
-
-
+.threesquare {
+    height:25vh;
+    margin-top: 5%;
+}
+.threesquaresub {
+    margin-bottom: 4%;
+}
 
 /* mediaquery 500px */
