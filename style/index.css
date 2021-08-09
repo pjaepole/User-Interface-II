@@ -50,9 +50,9 @@ table {
 
 /* border for easier styling */
 *{
-    /* box-sizing: border-box;
-    max-width: 100%;
-    /* border:1px solid grey; */
+    box-sizing: border-box;
+    
+    /* border:1px solid grey;
     color: grey; */
 }
 
@@ -67,11 +67,12 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;  
     background-color: white;
+    max-width: 100%;
     text-decoration:none;
 }
 
 h1{
-    font-size: 10rem;
+    font-size: 8rem;
 }
 
 h2{
@@ -117,16 +118,21 @@ nav{
     background-image: url(../images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
     background-size:cover;
     margin: 1% 10%;
-}
-.bigimagepadding{
+    height: 40vh;
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    margin: auto;
+    align-items: center;
+}
+.header1{
+    height: 80%;
+}
+.header1sub{
+    height: 20%;
 }
 .bigimagecontent{
-    margin:10% 10%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
 }
 
 
@@ -134,52 +140,145 @@ nav{
 
 /* six square starts here */
 
-.threesquare {
+
+
+
+
+
+
+.sixsquare {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    height:50vh;
+    height: 35%;
+    margin: 10% 0%;
 }
 
-.threesquaresub {
+.squaree1 {
     display: flex;
-    justify-content: space-around;
-    margin: 1% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 30%;
 }
-
-.square1, .square2, .square3,.square4, .square5, .square6{
-    width: 33%;    
+.squaree1 p{
+    
+    height: 20%;
 }
-
-
-.square1{
+.squaree1bgimg{
     background-image: url(../images/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
     background-size:cover;
-    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
 }
-.square2{
+
+.squaree2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 30%;
+}
+.squaree2bgimg{
     background-image: url(../images/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg);
-    background-size:contain;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
 }
-.square3{
+.squaree2 p{
+    height: 20%;
+}
+
+
+.squaree3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    width: 30%;
+}
+.squaree3 p{
+    
+    height: 20%;
+}
+.squaree3bgimg{
     background-image: url(../images/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg);
     background-size:cover;
-    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
 }
-.square4{
+
+.squaree4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 30%;
+}
+.squaree4 p{
+    
+    height: 20%;
+}
+.squaree4bgimg{
     background-image: url(../images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg);
     background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
 }
-.square5{
+
+.squaree5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 30%;
+}
+.squaree5 p{
+    
+    height: 20%;
+}
+.squaree5bgimg{
     background-image: url(../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
     background-size:cover;
-    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
 }
-.square6{
+
+.squaree6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 30%;
+}
+.squaree6 p{
+    
+    height: 20%;
+}
+.squaree6bgimg{
     background-image: url(../images/alexandru-acea-XEB8y0nRRP4-unsplash.jpg);
     background-size:cover;
-    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
 }
+
+
+
 /* six square ends here */
+
+
 
 
 /* footer starts here */
@@ -191,7 +290,83 @@ footer{
     position: center;
     background-color: #e0e1dd;
 }
+/* footer ends her */
+
+
+/* mediaquery 800px */
+@media (max-width: 800px){
+
+
+/* mediaquery 500px */
+@media (max-width: 500px) {
+    h1{
+        font-size: 6rem;
+    }
+    /* nav and four button */
+    nav{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3%;
+    }
+    .fourbuttons{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .fourbuttons a{
+        width: 20%;    
+    }
+    /* nav and four button finish here */
+
+    /* bigimage with name and myproject */
+    .bigimage{
+        display: flex;
+        text-align: center;
+        background-image: url(../images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+        background-size:cover;
+        justify-content: center;
+        align-items: center;
+        
+    
+        
+    }
+    .bigimagepadding{
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        text-align: center;
+       
+    }
+    .bigimagecontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 25vh;
+        margin: 0%;
+    
+    }
+    .header1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* big image section with name and my projects done */
+/* six square images start */
+
+
+.sixsquare{
+    margin: 0% 0%;
+}
+.squaree1, .squaree2,.squaree3,.squaree4,.squaree5,.squaree6 {
+    width: 45%;
+}
+
+.squaree1bgimg,.squaree2bgimg,.squaree3bgimg,.squaree4bgimg,.squaree5bgimg,.squaree6bgimg{
+    height: 50%;
+
+}
 
 
 
-
+}
